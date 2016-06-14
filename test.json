@@ -1,0 +1,5 @@
+var oCar = {
+"color": "red", 
+"doors" : 4,
+"paidFor" : true
+};
