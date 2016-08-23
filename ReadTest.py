@@ -1,6 +1,8 @@
+__author__ = '张伟伟'
 
 import xlrd
 
+# 读取绝对路径下的excel文档下的数据
 
 class ReadTest:
     workbook = xlrd.open_workbook('E:\\test.xls')
