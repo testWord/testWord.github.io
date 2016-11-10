@@ -15,6 +15,13 @@ desired_caps['deviceName'] = 'aae85f3a'
 desired_caps['appPackage'] = 'com.unicocloud.smarthome'
 desired_caps['appActivity'] = 'com.unicocloud.smarthome.activity.LoginActivity'
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+# a、启动待测apk
+# b、开启日志输出：adb logcat>D:/log.txt
+# c、关闭日志输出：ctrl+c
+# d、查看日志
+# 找寻：Displayed com.mm.android.hsy/.ui.LoginActivity: +3s859ms
+# appPackage = com.mm.android.hsy
+# appActivity = .ui.LoginActivity
 class elementA(unittest.TestCase):
     def test_ebudiu(self):
         driver.find_element_by_id("com.unicocloud.smarthome:id/searchImageButton").click()
